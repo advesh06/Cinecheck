@@ -1,0 +1,10 @@
+{
+  "version": "1.0.0",
+  "best_model_name": "Logistic Regression",
+  "training_date": "2026-10-11",
+  "dataset_source": "data/cinecheck_reviews.csv",
+  "target_mapping": {
+    "0": "More Likely Genuine",
+    "1": "Potentially Suspicious"
+  }
+}

@@ -1,0 +1,95 @@
+{
+  "selected_best_model": "Logistic Regression",
+  "test_sample_size": 39,
+  "train_sample_size": 155,
+  "vocabulary_size": 710,
+  "logistic_regression": {
+    "accuracy": 1.0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1_score": 1.0,
+    "f1_macro": 1.0,
+    "confusion_matrix": [
+      [
+        22,
+        0
+      ],
+      [
+        0,
+        17
+      ]
+    ],
+    "confusion_matrix_breakdown": {
+      "true_genuine": 22,
+      "false_suspicious": 0,
+      "false_genuine": 0,
+      "true_suspicious": 17
+    }
+  },
+  "naive_bayes": {
+    "accuracy": 1.0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1_score": 1.0,
+    "f1_macro": 1.0,
+    "confusion_matrix": [
+      [
+        22,
+        0
+      ],
+      [
+        0,
+        17
+      ]
+    ],
+    "confusion_matrix_breakdown": {
+      "true_genuine": 22,
+      "false_suspicious": 0,
+      "false_genuine": 0,
+      "true_suspicious": 17
+    }
+  },
+  "comparison": [
+    {
+      "metric": "Accuracy",
+      "logistic_regression": 1.0,
+      "naive_bayes": 1.0
+    },
+    {
+      "metric": "Precision",
+      "logistic_regression": 1.0,
+      "naive_bayes": 1.0
+    },
+    {
+      "metric": "Recall",
+      "logistic_regression": 1.0,
+      "naive_bayes": 1.0
+    },
+    {
+      "metric": "F1-Score",
+      "logistic_regression": 1.0,
+      "naive_bayes": 1.0
+    },
+    {
+      "metric": "F1-Macro",
+      "logistic_regression": 1.0,
+      "naive_bayes": 1.0
+    }
+  ],
+  "bias_analysis": {
+    "description": "Error rate and accuracy disparity across star rating sub-cohorts (TWSMA Module 2.3)",
+    "rating_subgroups": {
+      "Low Ratings (<=2.5)": {
+        "sample_count": 7,
+        "accuracy": 1.0,
+        "f1_score": 1.0
+      },
+      "High Ratings (>=3.0)": {
+        "sample_count": 32,
+        "accuracy": 1.0,
+        "f1_score": 1.0
+      }
+    }
+  },
+  "ethical_safeguard_note": "Model predictions represent probabilistic linguistic suspicion scores and must not be interpreted as legally binding proof of fraud. Held-out metrics are calculated on the curated benchmark dataset."
+}
